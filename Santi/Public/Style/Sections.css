@@ -14,7 +14,7 @@
 /****************************************/
 /* HEADER */
 /****************************************/
-.inicio{
+body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,6 +40,11 @@ section img {
   width: 600px;
   opacity: 1;
   filter: contrast(120%);
+  z-index: 1;
+  margin-left: -30px;
+  margin-top: -30px;
+  margin-bottom: -30px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
 section img:hover {
