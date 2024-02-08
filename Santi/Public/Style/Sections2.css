@@ -14,23 +14,28 @@
 /****************************************/
 /* HEADER */
 /****************************************/
-.section1 {
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 60px;
+  
 }
-
-.carrusel {
+section {
   display: flex;
   width: 800px;
   height: 430px;
 }
 
-.img__carrusel {
+section img {
+  width: 0%;
   flex-grow: 1;
   object-fit: cover;
-  transition: width 3s ease;
+  opacity: 0.8;
+  transition: all 0.5s ease;
 }
 
-.img__carrusel--show {
+.central {
   cursor: crosshair;
   width: 600px;
   opacity: 1;
@@ -42,10 +47,31 @@
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
-.img__carrusel--hidden {
-  width: 100px;
-  opacity: 0.8;
+section img:hover {
+  cursor: crosshair;
+  width: 600px;
+  opacity: 1;
+  filter: contrast(120%);
+  z-index: 1;
+  margin-left: -30px;
+  margin-top: -30px;
+  margin-bottom: -30px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
+
+.carrusel {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.carrusel:hover .central {
+  width: 0%;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: all 0.5s ease;
+}
+
 
 /*Condiciones CSS*/
 
