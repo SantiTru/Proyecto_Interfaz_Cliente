@@ -26,10 +26,11 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
     <!-- Enlace a tu hoja de estilos CSS -->
-    <link rel="stylesheet" href="./Public/Style/Sections.css" />
+    <link rel="stylesheet" href="./Sections.css" />
     <link rel="stylesheet" href="./Public/Style/General.css" />
     <link rel="stylesheet" href="./Public/Style/Querys.css" />
   </head>
+
   <body>
     <!-- Contenido de tu página -->
     <header>
@@ -43,17 +44,44 @@
       </nav>
     </header>
 
-    <section id="inicio">
+    <section class="section1">
       <div class="carrusel">
-        <section>
-          <img src="./Public/Img/comida1.jpeg" alt="comida" />
-          <img src="./Public/Img/comida2.jpeg" alt="más comida" />
-          <img src="./Public/Img/juancarlosQueso.jpeg" alt="juan carlos el quesero" />
-          <img src="./Public/Img/Fondo.png" alt="el fondo" class="central"/>
-          <img src="./Public/Img/leche1.jpeg" alt="mucha leche" />
-          <img src="./Public/Img/pueblos1.jpeg" alt="un pueblo es" />
-          <img src="./Public/Img/señoraImagen1.jpeg" alt="la plaza" />
-        </section>
+        <img
+          src="./Public/Img/comida1.jpeg"
+          class="img__carrusel img__carrusel--hidden"
+          alt="comida"
+        />
+        <img
+          src="./Public/Img/comida2.jpeg"
+          class="img__carrusel img__carrusel--hidden"
+          alt="más comida"
+        />
+        <img
+          src="./Public/Img/juancarlosQueso.jpeg"
+          alt="juan carlos el quesero"
+          class="img__carrusel img__carrusel--hidden"
+        />
+        <img
+          src="./Public/Img/Fondo.png"
+          name="central"
+          alt="el fondo"
+          class="img__carrusel img__carrusel--show"
+        />
+        <img
+          src="./Public/Img/leche1.jpeg"
+          class="img__carrusel img__carrusel--hidden"
+          alt="mucha leche"
+        />
+        <img
+          src="./Public/Img/pueblos1.jpeg"
+          class="img__carrusel img__carrusel--hidden"
+          alt="un pueblo es"
+        />
+        <img
+          src="./Public/Img/señoraImagen1.jpeg"
+          class="img__carrusel img__carrusel--hidden"
+          alt="la plaza"
+        />
       </div>
     </section>
 
@@ -74,4 +102,27 @@
       <p>&copy; 2024 Travo Rural. Todos los derechos reservados.</p>
     </footer>
   </body>
+  <script>
+    carrusel = document.querySelector(".carrusel");
+    central = document.querySelector(".carrusel img[name='central']");
+
+    carrusel.addEventListener("mouseover", handleMouseOverCarrusel);
+    carrusel.addEventListener("mouseout", handleMouseOutCarrusel);
+
+    function handleMouseOverCarrusel(e) {
+      if (e.target.name === "central") return;
+      central.classList.add("img__carrusel--hidden");
+      central.classList.remove("img__carrusel--show");
+      e.target.classList.remove("img__carrusel--hidden");
+      e.target.classList.add("img__carrusel--show");
+    }
+
+    function handleMouseOutCarrusel(e) {
+      if (e.target.name === "central") return;
+      central.classList.remove("img__carrusel--hidden");
+      central.classList.add("img__carrusel--show");
+      e.target.classList.remove("img__carrusel--show");
+      e.target.classList.add("img__carrusel--hidden");
+    }
+  </script>
 </html>
