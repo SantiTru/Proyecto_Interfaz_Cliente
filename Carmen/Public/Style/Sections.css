@@ -111,9 +111,9 @@
 }
 
 .copyright {
-  font-size: 1.4rem;
+  font-size: 1rem;
   line-height: 1.6;
-  color: #767676;
+  color: #eee;
   margin-top: auto;
 }
 
@@ -133,7 +133,7 @@
 /*** prueba****/
 
 .footer-prueba{
-  width:80vw;
+  width:100vw;
   margin: 0 auto;
   align-items: center;
 }
@@ -158,6 +158,8 @@
   padding:24px 24px;
   box-shadow: inset 10px 0px 20px  #795839b8;
 }
+
+
 
 
 
