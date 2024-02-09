@@ -36,14 +36,14 @@ header {
   background: url(./img/Fondo.png);
   background: -webkit-linear-gradient(
       to right,
-      hsla(107, 33%, 24%, 0.472),
-      hsla(103, 6%, 56%, 0.677)
+      hsla(107, 33%, 24%, 0.309),
+      hsla(103, 6%, 56%, 0.327)
     ),
     url(./img/Fondo.png);
   background: linear-gradient(
       to right,
-      hsla(107, 33%, 24%, 0.472),
-      hsla(103, 6%, 56%, 0.677)
+      hsla(107, 33%, 24%, 0.309),
+      hsla(103, 6%, 56%, 0.327)
     ),
     url(./img/Fondo.png);
   background-size: cover;
