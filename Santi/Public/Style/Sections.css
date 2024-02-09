@@ -15,6 +15,17 @@
 /* HEADER */
 /****************************************/
 
+
+
+/****************************************/
+/* NAVIGATION */
+/****************************************/
+
+/****************************************/
+/* HERO SECTION*/
+/****************************************/
+
+/* CARRUSEL INICIO SECTION*/
 .inicio{
   display: flex;
   justify-content: center;
@@ -64,14 +75,43 @@
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
-/****************************************/
-/* NAVIGATION */
-/****************************************/
+/* CARRUSEL FEEDBACK SECTION*/
 
-/****************************************/
-/* HERO SECTION*/
-/****************************************/
+.feedback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
 
+.carruselFeed {
+  display: flex;
+  width: 800px;
+  height: 430px;
+}
+
+.img__carruselFeed {
+  flex-grow: 1;
+  object-fit: cover;
+  transition: all 3s ease;
+}
+
+.img__carruselFeed--show {
+  cursor: crosshair;
+  width: 600px;
+  opacity: 1;
+  filter: contrast(120%);
+  z-index: 1;
+  margin-left: -30px;
+  margin-top: -30px;
+  margin-bottom: -30px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.img__carruselFeed--hidden {
+  width: 100px;
+  opacity: 0.8;
+}
 /****************************************/
 /* AS FEATURED IN SECTION */
 /****************************************/
