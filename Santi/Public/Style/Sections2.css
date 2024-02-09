@@ -22,7 +22,7 @@ section {
 }
 
 section img {
-  width: 0%;
+  width: 10%;
   flex-grow: 1;
   object-fit: cover;
   opacity: 0.8;
@@ -49,11 +49,11 @@ section img:hover {
   height: 430px;
 }
 .carrusel:hover .central {
-  width: 0%;
+  width: 10%;
   flex-grow: 1;
   object-fit: cover;
   opacity: 0.8;
-  transition: all 0.5s ease;
+  transition: all 2s ease;
   margin-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;

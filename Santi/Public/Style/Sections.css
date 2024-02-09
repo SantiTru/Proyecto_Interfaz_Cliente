@@ -27,7 +27,7 @@
 .img__carrusel {
   flex-grow: 1;
   object-fit: cover;
-  transition: width 3s ease;
+  transition: all 3s ease;
 }
 
 .img__carrusel--show {
