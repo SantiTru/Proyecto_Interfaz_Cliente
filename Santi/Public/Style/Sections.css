@@ -19,7 +19,6 @@
   display: flex;
   justify-content: center;
   margin-top: 60px;
-
 }
 .carrusel img {
   width: 0%;
@@ -28,7 +27,6 @@
   opacity: 0.8;
   transition: all 3s ease;
 }
-
 .carrusel img:hover {
   cursor: crosshair;
   width: 60%;
@@ -40,7 +38,6 @@
   margin-bottom: -30px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
-
 .carrusel {
   width: 800px;
   height: 430px;
@@ -55,7 +52,6 @@
   margin-left: 0px;  margin-top: 0px;
   margin-bottom: 0px;
 }
-
 .carrusel .central {
   cursor: crosshair;
   width: 60%;
