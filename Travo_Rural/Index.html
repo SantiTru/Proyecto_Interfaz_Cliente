@@ -32,16 +32,24 @@
   <body>
     <!-- Contenido de tu página -->
     <header>
-      <h1>Mi Página Web</h1>
-      <nav>
+      <div class="header-left">
+        <ion-icon class="ico-icon" name="menu-outline"></ion-icon>
+        <img
+          class="header-left-logo"
+          src="./img/TravoLogo.png"
+          alt="Logo de Travo Rural"
+        />
+      </div>
+      <nav class="header-right">
         <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#acerca-de">Acerca de</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><button href="#">Productores</button></li>
+          <li><button href="#">Productos</button></li>
+          <li><button href="#">Ayuda</button></li>
         </ul>
       </nav>
     </header>
     <main>
+      <section class="background"></section>
       <section class="inicio">
         <div class="carrusel">
           <img src="./Public/Img/comida1.jpeg" alt="comida Mesón Oñate" />
