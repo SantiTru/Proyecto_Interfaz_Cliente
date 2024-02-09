@@ -14,28 +14,23 @@
 /****************************************/
 /* HEADER */
 /****************************************/
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.section1 {
   margin-top: 60px;
-  
 }
-section {
+
+.carrusel {
   display: flex;
   width: 800px;
   height: 430px;
 }
 
-section img {
-  width: 0%;
+.img__carrusel {
   flex-grow: 1;
   object-fit: cover;
-  opacity: 0.8;
-  transition: all 0.5s ease;
+  transition: all 3s ease;
 }
 
-.central {
+.img__carrusel--show {
   cursor: crosshair;
   width: 600px;
   opacity: 1;
@@ -47,31 +42,10 @@ section img {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
-section img:hover {
-  cursor: crosshair;
-  width: 600px;
-  opacity: 1;
-  filter: contrast(120%);
-  z-index: 1;
-  margin-left: -30px;
-  margin-top: -30px;
-  margin-bottom: -30px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-}
-
-.carrusel {
-  display: flex;
-  justify-content: center;
-  margin-top: 60px;
-}
-.carrusel:hover .central {
-  width: 0%;
-  flex-grow: 1;
-  object-fit: cover;
+.img__carrusel--hidden {
+  width: 100px;
   opacity: 0.8;
-  transition: all 0.5s ease;
 }
-
 
 /*Condiciones CSS*/
 

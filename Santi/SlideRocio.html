@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slide Rocío</title>
+    <link rel="shortcut icon" href="./Public/Img/TravoLogo.png" />
+
+    <!-- Etiquetas SEO -->
+    <meta
+      name="description"
+      content="Descripción de tu página para motores de búsqueda."
+    />
+    <meta
+      name="keywords"
+      content="Palabras clave, separadas por comas, relacionadas con tu contenido."
+    />
+    <meta name="author" content="Travo Rural." />
+    <meta name="robots" content="index, follow" />
+    <!-- Permite que los motores de búsqueda indexen y sigan los enlaces -->
+
+    <!-- Etiqueta canonical (indica la URL preferida cuando hay contenido duplicado) -->
+    <link rel="canonical" href="https://www.tudominio.com/tu-pagina.html" />
+
+    <!-- Enlace a tu favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Enlace a tu hoja de estilos CSS -->
+    <link rel="stylesheet" href="./Public/Style/SectionsRocio.css" />
+    <link rel="stylesheet" href="./Public/Style/General.css" />
+    <link rel="stylesheet" href="./Public/Style/Querys.css" />
+  </head>
+
+  <body>                                                                                                          
+    <!-- Contenido de tu página -->
+    <header>
+      <h1>Mi Página Web</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#acerca-de">Acerca de</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="section1">
+      <div class="carrusel">
+        <img
+          src="./Public/Img/comida1.jpeg"
+          class="img__carrusel img__carrusel--hidden"
+          alt="comida"
+        />
+        <img
+          src="./Public/Img/comida2.jpeg"
+          class="img__carrusel img__carrusel--hidden"
+          alt="más comida"
+        />
+        <img
+          src="./Public/Img/juancarlosQueso.jpeg"
+          alt="juan carlos el quesero"
+          class="img__carrusel img__carrusel--hidden"
+        />
+        <img
+          src="./Public/Img/Fondo.png"
+          name="central"
+          alt="el fondo"
+          class="img__carrusel img__carrusel--show"
+        />
+        <img
+          src="./Public/Img/leche1.jpeg"
+          class="img__carrusel img__carrusel--hidden"
+          alt="mucha leche"
+        />
+        <img
+          src="./Public/Img/pueblos1.jpeg"
+          class="img__carrusel img__carrusel--hidden"
+          alt="un pueblo es"
+        />
+        <img
+          src="./Public/Img/señoraImagen1.jpeg"
+          class="img__carrusel img__carrusel--hidden"
+          alt="la plaza"
+        />
+      </div>
+    </section>
+
+    <section id="acerca-de">
+      <h2>Acerca de</h2>
+      <p>Información sobre mí o sobre tu empresa.</p>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>
+        Puedes contactarme a través de este formulario o en las siguientes redes
+        sociales.
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Travo Rural. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+  <script>
+    carrusel = document.querySelector(".carrusel");
+    central = document.querySelector(".carrusel img[name='central']");
+
+    carrusel.addEventListener("mouseover", handleMouseOverCarrusel);
+    carrusel.addEventListener("mouseout", handleMouseOutCarrusel);
+
+    function handleMouseOverCarrusel(e) {
+      if (e.target.name === "central") return;
+      central.classList.add("img__carrusel--hidden");
+      central.classList.remove("img__carrusel--show");
+      e.target.classList.remove("img__carrusel--hidden");
+      e.target.classList.add("img__carrusel--show");
+    }
+
+    function handleMouseOutCarrusel(e) {
+      if (e.target.name === "central") return;
+      central.classList.remove("img__carrusel--hidden");
+      central.classList.add("img__carrusel--show");
+      e.target.classList.remove("img__carrusel--show");
+      e.target.classList.add("img__carrusel--hidden");
+    }
+  </script>
+</html>
