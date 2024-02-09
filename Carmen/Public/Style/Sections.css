@@ -133,15 +133,15 @@
 /*** prueba****/
 
 .footer-prueba{
-  display: block;
   width:80vw;
   margin: 0 auto;
+  align-items: center;
 }
 
 .parte1{
   background:#E1A66F;
   padding:30px 0;
-  box-shadow: 40px 40px 20px #787777 inset;
+  box-shadow: 10px 12px 20px #795839b8 inset;
 }
 .parte2{
   background-color: #574432;
@@ -156,6 +156,7 @@
   display:grid;
   grid-template-columns: repeat(4,1fr);
   padding:24px 24px;
+  box-shadow: 10px 0px 20px #795839b8 inset;
 }
 
 
