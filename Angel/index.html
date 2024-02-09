@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travo Rural</title>
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
 
     <!-- Librería de iconos-->
     <script
@@ -44,16 +44,20 @@
   <body>
     <!-- Contenido de tu página -->
     <header>
-      <nav>
+      <div class="header-left">
+        <ion-icon name="menu-outline"></ion-icon>
+        <img class="header-left-logo" src="./img/TravoLogo.png" alt="Logo de Travo Rural" />
+      </div>
+      <nav class="header-right">
         <ul>
-          <li><ion-icon name="menu-outline"></ion-icon></li>
-          <li><img src="./img/TravoLogo.png" alt="Logo de Travo Rural"></li>
-          <li><a href="#">Productores</a></li>
-          <li><a href="#">Productos</a></li>
-          <li><a href="#">Ayuda</a></li>
+          <li><button href="#">Productores</button></li>
+          <li><button href="#">Productos</button></li>
+          <li><button href="#">Ayuda</button></li>
         </ul>
       </nav>
-    </header> 
+    </header>
+
+    <section class="background"></section>
 
     <section id="inicio">
       <h2>Bienvenido a mi página web</h2>
