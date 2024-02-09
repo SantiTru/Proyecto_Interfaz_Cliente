@@ -36,7 +36,7 @@
   flex-grow: 1;
   object-fit: cover;
   opacity: 0.8;
-  transition: all 3s ease;
+  transition: all 2s ease;
 }
 .carrusel img:hover {
   cursor: crosshair;
@@ -80,7 +80,6 @@
 .feedback {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-top: 60px;
 }
 
@@ -98,7 +97,7 @@
 
 .img__carruselFeed--show {
   cursor: crosshair;
-  width: 600px;
+  width: 60%;
   opacity: 1;
   filter: contrast(120%);
   z-index: 1;
@@ -109,7 +108,7 @@
 }
 
 .img__carruselFeed--hidden {
-  width: 100px;
+  width: 0%;
   opacity: 0.8;
 }
 /****************************************/
