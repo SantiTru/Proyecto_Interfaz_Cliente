@@ -21,12 +21,18 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 30px;
-  box-shadow: inset 0 -4em 3em #b68d67, 0 0 0 2px rgb(0, 0, 0),
-    0.3em 0.3em 1em #b68d67;
+  box-shadow: inset 0 -5em 8em #b68d67b7, 
+                    0 0 0 2px rgb(0, 0, 0),
+                    0.3em 0.3em 1em #b68d67;
 }
 
 .header-left {
   display: flex;
+}
+
+.header-left .ion-icon {
+  width: 24px;
+  height: 24px;
 }
 
 .header-left-logo {
@@ -47,7 +53,7 @@ header {
       to right,
       hsla(107, 33%, 24%, 0.309),
       hsla(103, 6%, 56%, 0.327)
-    ), url("./img/Fondo.png");
+    ), url("../Img/Fondo.png");
   background-size: cover;
   background-attachment: fixed;
   background-position-y: -119px;
