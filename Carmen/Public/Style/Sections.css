@@ -58,13 +58,11 @@
 /****************************************/
 /* FOOTER SECTION */
 /****************************************/
-.footer {
-  padding: 12.8rem 0;
-  border-top: 1px solid #eee;
-}
 
 .grid--footer-cols {
-  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  background:#E1A66F;
+  padding:30px 0;
+  box-shadow: 10px 12px 20px #795839b8 inset;
 }
 .footer-heading {
   font-size: 1.8rem;
@@ -90,8 +88,11 @@
 }
 
 .logo-col{
-  display: flex;
-  flex-direction: colum;
+  background-color: white;
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  padding:24px 24px;
+  box-shadow: inset 10px 0px 20px  #795839b8;
 }
 
 .footer-logo {
@@ -128,21 +129,23 @@
 
 .address {
   margin-bottom: 2.4rem;
-}
+}*/
 
 /*** prueba****/
 
-.footer-prueba{
+.footer{
   width:100vw;
   margin: 0 auto;
   align-items: center;
 }
+
 
 .parte1{
   background:#E1A66F;
   padding:30px 0;
   box-shadow: 10px 12px 20px #795839b8 inset;
 }
+
 .parte2{
   background-color: #574432;
   padding:6px 24px;
@@ -159,8 +162,52 @@
   box-shadow: inset 10px 0px 20px  #795839b8;
 }
 
+.social-links{
+  display: flex;
+  gap: 1.5rem;
+}
 
+.social-icon{
+  width: 1rem;
+  height: 1rem;
+}
 
+.partegrid{
+  background-color: white;
+  display: grid ;
+}
+
+.grid_logo{
+  display: flex;
+  width: 100%;
+  justify-content: left;
+  height: 2.5rem;
+}
+
+.grid_contac{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.footer-contac{
+  font-size: 1.8rem;
+}
+.grid_nav-col1{
+  display: grid;
+  align-items: right;
+  justify-items: left;
+}
+
+.grid_nav-col2{
+  display: grid;
+  align-items: right;
+  justify-items: left;
+}
+.footer-link{
+font-size: 1.8rem;
+font-weight: 500;
+}
 
 
 
