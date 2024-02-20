@@ -35,6 +35,60 @@
 /* MEALS SECTION*/
 /****************************************/
 
+.title-banner {
+  background-color: #C6996F; 
+  padding: 10px 0; /* Espacio alrededor del texto */
+  text-align: center; 
+  width: 100%; /* Ocupa todo el ancho de la página */
+  z-index: 1; /* La franja estará por encima del resto del contenido */
+}
+
+.title-banner h3 {
+  color: black; 
+  font-size: 2em; 
+}
+
+#description {
+  margin-top: 60px; /* Ajusta este valor para que el contenido no quede oculto bajo la franja */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Esto crea dos columnas */
+  grid-gap: 20px; /* Esto añade un espacio entre las columnas y las filas */
+}
+
+.fila {
+  display: flex;
+  flex-direction: row;
+}
+
+.columna {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  order: 1;
+}
+
+.texto, .texto2, .texto3 {
+  order: 2;
+}
+
+.columna:nth-child(2) .logo {
+  order: 2;
+}
+
+.columna:nth-child(2) .texto2 {
+  order: 1;
+}
+
+
+
+
 /****************************************/
 /* TESTIMONIALS SECTION*/
 /****************************************/
