@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travo Rural</title>
-      <!-- Librería de iconos-->
-      <script
+    <!-- Librería de iconos-->
+    <script
       type="module"
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
     ></script>
@@ -57,33 +57,72 @@
     </section>
 
     <section id="acerca-de">
-      <h2>Acerca de</h2>
-      <p>Información sobre mí o sobre tu empresa.</p>
+      <div class="title"><!-- esto va con o con flex y align itme center  o con justify content center  -->
+        <h3><b>Tu mercado digital de productores locales.</b></h3>
+        <h3><Uniendo>Uniendo comunidades con la tradición.</b></h3>
+      </div>
+      <div class="grid">
+        <div class="fila1">
+            <img
+              class="logo"
+              alt="Vasija"
+              src="./Public/Img/"/>
+            <p class="texto1">Artesanía en tus manos.<br>
+              Descubre la belleza de la cerámica hecha a mano,<br>
+              cada pieza es un reflejo de la decicación y el amor del artesano.<br>
+            </p>
+        </div>
+        <div class="fila2">
+            <img
+              class="logo"
+              alt="Platos"
+              src="./Public/Img/"/>
+              <p class="texto2">Sabor a hogar.<br>
+                Disfruta de guisos tradicionales, preparados con recetas<br>
+                que han pasado de generación en generación, llenando tu.<br>
+                hogar con sabores auténticos.<br>
+              </p>
+        </div>
+        <div class="fila3">
+            <img
+              class="logo"
+              alt=">Rebaño"
+              src="./Public/Img/"/>
+              <p class="texto3">De la granja a tu mesa.<br>
+                Conéctate con la naturaleza a trvés de nuestros<br>
+                productos de granja, criados y cuidados en campos<br>
+                abiertos, garantizando su frescura y calidad.<br>
+              </p>
+        </div>
+      </div>
     </section>
 
     <section id="contacto">
-      <h2>Contacto</h2>
+      <div class="grid_reseñas">
+      <h2>Reseñas</h2>
       <p>
-        Puedes contactarme a través de este formulario o en las siguientes redes
-        sociales.
+        Aquí va el carrusel de las reseñas.
       </p>
+      </div>
     </section>
 
-    
-
     <!-- FOOTER -->
-    
+
     <div class="footer">
       <div class="parte1">
         <div class="partegrid">
-          <div class="grid_logo"><a href="#" class="footer-logo">
-            <img  
-            class="logo" 
-            alt="Travo Rural Logo"
-            src="./Public/Img/TravoLogo.png" style="width: 100px"/>
-          </a>
+          <div class="grid_logo">
+            <a href="#" class="footer-logo">
+              <img
+                class="logo"
+                alt="Travo Rural Logo"
+                src="./Public/Img/TravoLogo.png"
+                style="width: 100px"
+              />
+            </a>
           </div>
-          <div class="grid_contac"><b class="footer-contac">Contacto</b>
+          <div class="grid_contac">
+            <b class="footer-contac">Contacto</b>
             <contact class="contacts">
               <p class="email">
                 <ion-icon name="mail-outline"></ion-icon>
@@ -97,36 +136,38 @@
           </div>
           <div class="grid_nav-col1">
             <div class="footer-link" href="#">Haz tu pedido</div>
-          <div class="footer-link" href="#">Únete a nosotros</div>
-          <div class="footer-link" href="#">Condiciones de envío</div>
-          <div class="footer-link" href="#">blog</div>
+            <div class="footer-link" href="#">Únete a nosotros</div>
+            <div class="footer-link" href="#">Condiciones de envío</div>
+            <div class="footer-link" href="#">blog</div>
           </div>
           <div class="grid_nav-col2">
             <div class="footer-link" href="#">Sobre nosotros</div>
-          <div class="footer-link" href="#">Servicios</div>
-          <div class="footer-link" href="#">FAQ</div>
-          <div class="footer-link" href="#">Reseñas</div></div>
+            <div class="footer-link" href="#">Servicios</div>
+            <div class="footer-link" href="#">FAQ</div>
+            <div class="footer-link" href="#">Reseñas</div>
+          </div>
         </div>
       </div>
-      
+
       <div class="parte2">
-        <div class="copyright">&copy; 2024 Travo Rural. Todos los derechos reservados.</div>
+        <div class="copyright">
+          &copy; 2024 Travo Rural. Todos los derechos reservados.
+        </div>
         <div class="social-links">
-        <a class="footer-link" href="#">
-          <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
-        </a>
-        <a class="footer-link" href="#">
-          <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
-        </a>
-        <a class="footer-link" href="#">
-          <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
-        </a>
-        <a class="footer-link" href="#">
-          <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
-        </a></div>
+          <a class="footer-link" href="#">
+            <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+          </a>
+          <a class="footer-link" href="#">
+            <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+          </a>
+          <a class="footer-link" href="#">
+            <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
+          </a>
+          <a class="footer-link" href="#">
+            <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+          </a>
+        </div>
       </div>
     </div>
-
-
   </body>
 </html>
