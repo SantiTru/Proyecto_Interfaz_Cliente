@@ -50,43 +50,44 @@
 
 #description {
   margin-top: 60px; /* Ajusta este valor para que el contenido no quede oculto bajo la franja */
+  display: flex;
+  justify-content: center;
 }
+
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Esto crea dos columnas */
-  grid-gap: 20px; /* Esto añade un espacio entre las columnas y las filas */
+  grid-template-columns: 1fr 1fr;  /* Esto crea dos columnas */
+  width:100%; margin: 0 auto;
 }
 
-.fila {
-  display: flex;
-  flex-direction: row;
-}
-
-.columna {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.grid_item_img{display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.logo {
-  order: 1;
+.grid_item_img img{
+width: 500px;
+height: 300px;
+object-fit: cover;
+border-radius: 20px;
 }
 
-.texto, .texto2, .texto3 {
-  order: 2;
+.grid_item_txt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.5;
+  font-size: 20px;
 }
 
-.columna:nth-child(2) .logo {
-  order: 2;
+.grid-left{
+  justify-self: start;
 }
-
-.columna:nth-child(2) .texto2 {
-  order: 1;
+.grid-right{
+  justify-self: end;
 }
-
-
 
 
 /****************************************/
