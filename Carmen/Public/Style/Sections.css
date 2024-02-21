@@ -49,7 +49,7 @@
 }
 
 #description {
-  margin-top: 60px; /* Ajusta este valor para que el contenido no quede oculto bajo la franja */
+  margin: 60px; /* Ajusta este valor para que el contenido no quede oculto bajo la franja */
   display: flex;
   justify-content: center;
 }
