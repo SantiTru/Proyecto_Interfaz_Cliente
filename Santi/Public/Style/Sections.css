@@ -157,9 +157,9 @@ figure {
 
 .textoContainer {
   position: absolute; 
-  bottom: 20;
-  align-items: center;
-  justify-content: center;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 80%; 
   background-color: rgba(255, 255, 255, 0.7); 
   padding: 10px; 
