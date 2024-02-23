@@ -14,31 +14,96 @@ con media queries, pues vamos a usar su homologo que es em*/
 
 */
 
-/* <=1344px (smaller desktop)*/
-@media (max-width: 84em) {
-  /****************************************/
-  /* section hero */
-  /****************************************/
-  /* vale, el resto tiene un container de 1200px para que todos estén alineados
-      menos el hero, pues el hero cuando sea menor de 1300px, tbe le vamos a poner el mismo
-      width que los otros para que se vea alineados a los otros */
-  .hero {
-    max-width: 120rem;
+@media screen and (min-width: 1024px) {
+  :root {
+    --normal-font-size: 1rem;
   }
-  /*el título del heading se ve super grande ocupando 4 líneas, vamos a hacer
-    que ocupe menos líneas, pues bajando el font-size*/
-  .heading-primary {
-    /*antes 5.2*/
-    font-size: 4.4rem;
+}
+
+@media screen and (max-width: 1118px) {
+  .nav__menu {
+    position: absolute;
+    left: 0;
+    top: 2.5rem;
+    width: 100%;
+    height: calc(100vh - 3.5rem);
+    overflow: auto;
+    pointer-events: none;
+    opacity: 0;
+    transition: top 0.4s, opacity 0.3s;
+  }
+  .nav__menu::-webkit-scrollbar {
+    width: 0;
+  }
+  .nav__list {
+    background-color: var(--travo-color);
+    padding-top: 1rem;
+  }
+}
+
+/* Para dispositivos pequeños */
+@media screen and (max-width: 340px) {
+  .container {
+    margin-inline: 1rem;
   }
 
-  /****************************************/
-  /* section testimonial */
-  /****************************************/
-  /*el diseño del grid de la galeria de imágenes de testimonios se rompe bastante
-  el tamaño, así que vamos a quitarle una columna al grid*/
-  .gallery {
-    /*antes 3 de 1 fr*/
-    grid-template-columns: repeat(2, 1fr);
+  .nav__link {
+    padding-inline: 1rem;
+  }
+}
+
+/* Para dispositivos grandes */
+@media screen and (min-width: 1118px) {
+  .container {
+    margin-inline: auto;
+  }
+
+  .nav {
+    height: calc(var(--header-height) + 2rem);
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav__toggle {
+    display: none;
+  }
+  .nav__list {
+    height: 100%;
+    display: flex;
+    column-gap: 3rem;
+  }
+  .nav__link {
+    height: 100%;
+    padding: 0;
+    justify-content: initial;
+    column-gap: 0.25rem;
+  }
+  .nav__link:hover {
+    background-color: transparent;
+  }
+
+  .desplegable__item {
+    position: relative;
+  }
+
+  .desplegable__menu {
+    max-height: initial;
+    overflow: initial;
+    position: absolute;
+    left: 0;
+    top: 6rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s, top 0.3s;
+  }
+
+  .desplegable__link {
+    padding-inline: 1rem 3.5rem;
+  }
+
+  .desplegable__item:hover .desplegable__menu {
+    opacity: 1;
+    top: 5.5rem;
+    pointer-events: initial;
+    transition: top 0.3s;
   }
 }

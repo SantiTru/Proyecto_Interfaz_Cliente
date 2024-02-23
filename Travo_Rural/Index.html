@@ -31,25 +31,66 @@
     <link rel="stylesheet" href="./Public/Style/Sections.css" />
     <link rel="stylesheet" href="./Public/Style/Querys.css" />
 
+    <!--=============== REMIXICONS LIBRERIA DE ICONOS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <script src="./Public/Js/Script2.js" defer></script>
+
     <script src="./Public/Js/Script1.js"></script>
   </head>
   <body>
     <!-- Contenido de tu página -->
-    <header>
-      <div class="header-left">
-        <ion-icon class="ion-icon" name="menu-outline"></ion-icon>
-        <img
-          class="header-left-logo"
-          src="./Public/Img/TravoLogo.png"
-          alt="Logo de Travo Rural"
-        />
-      </div>
-      <nav class="header-right">
-        <ul>
-          <li><button class="btn Productores">Productores</button></li>
-          <li><button class="btn Productos">Productos</button></li>
-          <li><button class="btn Ayuda">Ayuda</button></li>
-        </ul>
+    <header class="header">
+      <nav class="nav container">
+        <!-- CONTENIDO A USAR EN NAV -->
+
+        <div class="nav__data">
+          <a href="#" class="nav__logo">
+            <img src="./Public/Img/TravoLogo.ico" alt="TravoLogo" />
+          </a>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
+          </div>
+        </div>
+
+        <!-- MENU NAV -->
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="#" class="nav__link">Productores</a></li>
+
+            <li><a href="#" class="nav__link">Productos</a></li>
+
+            <li><a href="#" class="nav__link">Ayuda</a></li>
+
+            <!--=============== Desplegable ===============-->
+            <li class="desplegable__item">
+              <div class="nav__link">
+                <div><i class="ri-global-line"></i> Idioma</div>
+                <i class="ri-arrow-down-s-line desplegable__arrow"></i>
+              </div>
+
+              <ul class="desplegable__menu">
+                <li>
+                  <a href="#" class="desplegable__link"> Español </a>
+                </li>
+
+                <li>
+                  <a href="#" class="desplegable__link"> Inglés </a>
+                </li>
+
+                <li>
+                  <a href="#" class="desplegable__link"> Euskera </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <section class="hero-fondo">
@@ -129,41 +170,53 @@
 
     <section class="feedback">
       <div class="feedback-container">
-        <blockquote  class="feedback-item">
+        <blockquote class="feedback-item">
           <img src="./Public/Img/clienteHombre1.jpeg" alt="Imagen 1" />
           <div class="textoContainer">
-            <h3>Manuel:</h3><br>
+            <h3>Manuel:</h3>
+            <br />
             <p class="textoFeed">
-              "Estoy encantado de expresar mi más sincera gratitud hacia la empresa de productos rurales Travo Rural por proporcionar servicios y productos de calidad excepcional."
+              "Estoy encantado de expresar mi más sincera gratitud hacia la
+              empresa de productos rurales Travo Rural por proporcionar
+              servicios y productos de calidad excepcional."
             </p>
           </div>
         </blockquote>
-        <blockquote  class="feedback-item">
+        <blockquote class="feedback-item">
           <img src="./Public/Img/barbudo_sonriente.jpg" alt="Imagen 2" />
           <div class="textoContainer">
-            <h3>Pepe:</h3><br>
-          <p class="textoFeed">
-            "Lo que realmente destaca para mí es la atención al cliente que recibí. En cada interacción, el personal demostró un profundo conocimiento sobre los productos."
-          </p>
-        </div>
+            <h3>Pepe:</h3>
+            <br />
+            <p class="textoFeed">
+              "Lo que realmente destaca para mí es la atención al cliente que
+              recibí. En cada interacción, el personal demostró un profundo
+              conocimiento sobre los productos."
+            </p>
+          </div>
         </blockquote>
         <blockquote class="feedback-item">
           <img src="./Public/Img/mujerJoven.jpeg" alt="Imagen 3" />
           <div class="textoContainer">
-          <h3>Eliana:</h3><br>
-          <p class="textoFeed">
-            "Su compromiso con la excelencia en cada aspecto de su negocio, desde la atención al cliente hasta la calidad de los productos, los distingue como líderes en su campo."
-          </p>
-        </div>
+            <h3>Eliana:</h3>
+            <br />
+            <p class="textoFeed">
+              "Su compromiso con la excelencia en cada aspecto de su negocio,
+              desde la atención al cliente hasta la calidad de los productos,
+              los distingue como líderes en su campo."
+            </p>
+          </div>
         </blockquote>
         <blockquote class="feedback-item">
           <img src="./Public/Img/clienta.jpg" alt="Imagen 4" />
           <div class="textoContainer">
-          <h3>Itziar:</h3><br>
-          <p class="textoFeed">
-            "Cada artículo refleja el cuidado y el amor que la empresa dedica a su artesanía, desde las herramientas agrícolas hasta los productos alimenticios frescos."
-          </p>
-        </div>
+            <h3>Itziar:</h3>
+            <br />
+            <p class="textoFeed">
+              "Cada artículo refleja el cuidado y el amor que la empresa dedica
+              a su artesanía, desde las herramientas agrícolas hasta los
+              productos alimenticios frescos."
+            </p>
+          </div>
         </blockquote>
       </div>
       <nav class="feedback-navigation">
