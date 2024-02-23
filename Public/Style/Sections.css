@@ -156,39 +156,10 @@
   z-index: -10;
 }
 
-/* .background {
-  width: 100vw;
-  height: 400px;
-  background-image: linear-gradient(
-      to right,
-      hsla(107, 33%, 24%, 0.193),
-      hsla(103, 6%, 56%, 0.216)
-    ),
-    url("../img/Fondo.png");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position-y: -119px;
-} */
-/****************************************/
-/* NAVIGATION */
-/****************************************/
+/************************************************/
+/* MAIN */
+/************************************************/
 
-/****************************************/
-/* HERO SECTION*/
-/****************************************/
-
-/****************************************/
-/* º
-            MAIN SECTION
-  EL MAIN VA A CONTENER EL CARRUSEL DE IMAGENES
-  EL TÍTULO DEL MERCADO DIGITAL
-  CONTENIDO DEL MERCADO DIGITAL
-
-  será un flex con direccion columna
-  en el que estará todo el contenido centrado y 
-  con un color back ground #ded3c3
-*/
-/****************************************/
 main {
   display: flex;
   flex-direction: column;
@@ -341,14 +312,6 @@ main {
 }
 
 /****************************************/
-/* HOW IT WORKS SECTION*/
-/****************************************/
-
-/****************************************/
-/* MEALS SECTION*/
-/****************************************/
-
-/****************************************/
 /* TESTIMONIALS SECTION*/
 /****************************************/
 
@@ -424,22 +387,6 @@ blockquote {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.245);
   background-color: rgba(240, 248, 255, 0.556);
 }
-
-/****************************************/
-/* PRICING SECTION*/
-/****************************************/
-
-/****************************************/
-/* PLAN DETAILS SUBSECTION*/
-/****************************************/
-
-/****************************************/
-/* FEATURE SUBSECTION*/
-/****************************************/
-
-/****************************************/
-/* CTA SECTION*/
-/****************************************/
 
 /****************************************/
 /* FOOTER SECTION */
