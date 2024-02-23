@@ -1,12 +1,14 @@
+/*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
+/*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation,ness)*/
-  --travo-color: #976c4e;
-  --travo-color-claro: #b78867;
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --black-color: hsl(220, 24%, 12%);
+  --black-color-light: hsl(220, 24%, 15%);
   --white-color: #fff;
   --body-color: hsl(220, 100%, 97%);
 
@@ -24,22 +26,24 @@
   --z-fixed: 100;
 }
 
+/*========== Responsive typography ==========*/
 @media screen and (min-width: 1024px) {
   :root {
     --normal-font-size: 1rem;
   }
 }
 
+/*=============== BASE ===============*/
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: #fff;
+  background-color: var(--body-color);
 }
 
 ul {
@@ -50,30 +54,32 @@ a {
   text-decoration: none;
 }
 
+/*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1120px;
   margin-inline: 1.5rem;
 }
 
+/*=============== HEADER ===============*/
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--travo-color);
-  box-shadow: inset 0 -4em 4em #ded3c3, 0 0 0 1px rgb(0, 0, 0),
-    0.3em 0.3em 1em #ded3c3;
-  z-index: 100;
+  background-color: var(--black-color);
+  box-shadow: 0 2px 16px hsla(220, 32%, 8%, 0.3);
+  z-index: var(--z-fixed);
 }
 
+/*=============== NAV ===============*/
 .nav {
-  height: 3.5rem;
+  height: var(--header-height);
 }
 
 .nav__logo,
 .nav__burger,
 .nav__close {
-  color: var(--travo-color);
+  color: var(--white-color);
 }
 
 .nav__data {
@@ -87,11 +93,12 @@ a {
   display: inline-flex;
   align-items: center;
   column-gap: 0.25rem;
-  font-weight: 600;
+  font-weight: var(--font-semi-bold);
 }
 
-.nav__logo img {
-  width: 4rem;
+.nav__logo i {
+  font-weight: initial;
+  font-size: 1.25rem;
 }
 
 .nav__toggle {
@@ -133,13 +140,14 @@ a {
     width: 0;
   }
   .nav__list {
-    background-color: var(--travo-color);
+    background-color: var(--black-color);
     padding-top: 1rem;
   }
 }
 
 .nav__link {
-  color: var(--black-color);
+  color: var(--white-color);
+  background-color: var(--black-color);
   font-weight: var(--font-semi-bold);
   padding: 1.25rem 1.5rem;
   display: flex;
@@ -149,7 +157,7 @@ a {
 }
 
 .nav__link:hover {
-  background-color: var(--travo-color-claro);
+  background-color: var(--black-color-light);
 }
 
 /* Show menu */
@@ -169,21 +177,21 @@ a {
   transform: rotate(90deg);
 }
 
-/*=============== desplegable ===============*/
-.desplegable__item {
+/*=============== DROPDOWN ===============*/
+.dropdown__item {
   cursor: pointer;
 }
 
-.desplegable__arrow {
+.dropdown__arrow {
   font-size: 1.25rem;
   font-weight: initial;
   transition: transform 0.4s;
 }
 
-.desplegable__link {
+.dropdown__link {
   padding: 1.25rem 1.25rem 1.25rem 2.5rem;
-  color: black;
-  background-color: var(--travo-color-claro);
+  color: var(--white-color);
+  background-color: var(--black-color-light);
   display: flex;
   align-items: center;
   column-gap: 0.5rem;
@@ -191,29 +199,29 @@ a {
   transition: background-color 0.3s;
 }
 
-.desplegable__link i {
+.dropdown__link i {
   font-size: 1.25rem;
   font-weight: initial;
 }
 
-.desplegable__link:hover {
-  background-color: var(--travo-color);
+.dropdown__link:hover {
+  background-color: var(--black-color);
 }
 
-.desplegable__menu {
+.dropdown__menu {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease-out;
 }
 
-/* Show desplegable menu */
-.desplegable__item:hover .desplegable__menu {
+/* Show dropdown menu */
+.dropdown__item:hover .dropdown__menu {
   max-height: 1000px;
   transition: max-height 0.4s ease-in;
 }
 
-/* Rotate desplegable icon */
-.desplegable__item:hover .desplegable__arrow {
+/* Rotate dropdown icon */
+.dropdown__item:hover .dropdown__arrow {
   transform: rotate(180deg);
 }
 
@@ -258,11 +266,11 @@ a {
     background-color: transparent;
   }
 
-  .desplegable__item {
+  .dropdown__item {
     position: relative;
   }
 
-  .desplegable__menu {
+  .dropdown__menu {
     max-height: initial;
     overflow: initial;
     position: absolute;
@@ -273,97 +281,15 @@ a {
     transition: opacity 0.3s, top 0.3s;
   }
 
-  .desplegable__link {
+  .dropdown__link {
     padding-inline: 1rem 3.5rem;
   }
 
-  .desplegable__item:hover .desplegable__menu {
+  /* Show dropdown menu */
+  .dropdown__item:hover .dropdown__menu {
     opacity: 1;
     top: 5.5rem;
     pointer-events: initial;
     transition: top 0.3s;
   }
 }
-
-/* Clase base para todos los botones */
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  transition: all 0.2s ease-in-out;
-  background-color: #8b4d23c0;
-  color: #fff;
-  border-color: #8b4d23c0;
-
-  /* Efecto hover */
-  &:hover {
-    background-color: #332b20;
-    border-color: #332b20;
-  }
-}
-
-/* .hero-fondo {
-  width: 100%;
-  height: 50rem;
-  margin: 0 auto;
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translateY(-150px);  Duda sobre esto, porque deja un espacio abajo 
-  z-index: -10;
-}
-
-.img-fondo {
-  width: 100%;
-  position: fixed;
-  z-index: -10;
-} */
-
-/* .hero-fondo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.img-fondo {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-} */
-
-.hero-fondo {
-  position: relative;
-  width: 100%;
-  height: 40em;
-}
-
-.img-fondo {
-  position: fixed;
-  top: 0;
-  left: 0;
-  transform: translateY(-35px);
-  width: 100vw;
-  object-fit: cover;
-  z-index: -10;
-}
-
-/* .background {
-  width: 100vw;
-  height: 400px;
-  background-image: linear-gradient(
-      to right,
-      hsla(107, 33%, 24%, 0.193),
-      hsla(103, 6%, 56%, 0.216)
-    ),
-    url("./img/Fondo.png");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position-y: -119px;
-} */

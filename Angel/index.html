@@ -6,47 +6,21 @@
     <title>Travo Rural</title>
 
     <link rel="stylesheet" href="./style.css" />
-
-    <!-- Librería de iconos-->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule=""
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
-    ></script>
-
-    <!-- Etiquetas SEO -->
-    <meta
-      name="description"
-      content="Descripción de tu página para motores de búsqueda."
+    <!--=============== REMIXICONS LIBRERIA DE ICONOS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
     />
-    <meta
-      name="keywords"
-      content="Palabras clave, separadas por comas, relacionadas con tu contenido."
-    />
-    <meta name="author" content="Travo Rural." />
-    <meta name="robots" content="index, follow" />
-    <!-- Permite que los motores de búsqueda indexen y sigan los enlaces -->
 
-    <!-- Etiqueta canonical (indica la URL preferida cuando hay contenido duplicado) -->
-    <link rel="canonical" href="https://www.tudominio.com/tu-pagina.html" />
-
-    <!-- Enlace a tu favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
-    <!-- Enlace a tu hoja de estilos CSS -->
-    <link rel="stylesheet" href="./Public/Style/Sections.css" />
-    <link rel="stylesheet" href="./Public/Style/General.css" />
-    <link rel="stylesheet" href="./Public/Style/Querys.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <!-- Contenido de tu página -->
-    <header class="header">
-      <div class="header-left">
-        <ion-icon class="ico-icon" name="menu-outline"></ion-icon>
-        <img class="header-left-logo" src="./img/TravoLogo.png" alt="Logo de Travo Rural" />
+    <!-- <header class="header">
+      <img
+        class="header-left-logo"
+        src="./img/TravoLogo.png"
+        alt="Logo de Travo Rural"
+       />
       </div>
       <nav class="header-right">
         <ul>
@@ -55,86 +29,61 @@
           <li><button class="btn Ayuda">Ayuda</button></li>
         </ul>
       </nav>
+    </header> -->
+
+    <header class="header">
+      <nav class="nav container">
+        <!-- CONTENIDO A USAR EN NAV -->
+
+        <div class="nav__data">
+          <a href="#" class="nav__logo">
+            <img src="./img/TravoLogo.ico" alt="TravoLogo" />
+          </a>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
+          </div>
+        </div>
+
+        <!-- MENU NAV -->
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="#" class="nav__link">Productores</a></li>
+
+            <li><a href="#" class="nav__link">Productos</a></li>
+
+            <li><a href="#" class="nav__link">Ayuda</a></li>
+
+            <!--=============== Desplegable ===============-->
+            <li class="desplegable__item">
+              <div class="nav__link">
+                <div><i class="ri-global-line"></i> Idioma</div>
+                <i class="ri-arrow-down-s-line desplegable__arrow"></i>
+              </div>
+
+              <ul class="desplegable__menu">
+                <li>
+                  <a href="#" class="desplegable__link"> Español </a>
+                </li>
+
+                <li>
+                  <a href="#" class="desplegable__link"> Inglés </a>
+                </li>
+
+                <li>
+                  <a href="#" class="desplegable__link"> Euskera </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
-    
-    <section class="hero-fondo"><img class="img-fondo" src="./img/Fondo.png" alt="" /></section>
 
-    <section id="inicio">
-      <h2>Bienvenido a mi página web</h2>
-      <p>Este es el contenido de la sección de inicio.</p>
+    <section class="hero-fondo">
+      <img class="img-fondo" src="./img/Fondo.png" alt="" />
     </section>
-
-    <section id="acerca-de">
-      <h2>Acerca de</h2>
-      <p>Información sobre mí o sobre tu empresa.</p>
-    </section>
-
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <p>
-        Puedes contactarme a través de este formulario o en las siguientes redes
-        sociales.
-      </p>
-    </section>
-
-    section id="contacto">
-      <h2>Contacto</h2>
-      <p>
-        Puedes contactarme a través de este formulario o en las siguientes redes
-        sociales.
-      </p>
-    </section>
-
-    section id="contacto">
-      <h2>Contacto</h2>
-      <p>
-        Puedes contactarme a través de este formulario o en las siguientes redes
-        sociales.
-      </p>
-    </section>
-
-    section id="contacto">
-      <h2>Contacto</h2>
-      <p>
-        Puedes contactarme a través de este formulario o en las siguientes redes
-        sociales.
-      </p>
-    </section>
-
-    section id="contacto">
-      <h2>Contacto</h2>
-      <p>
-        Puedes contactarme a través de este formulario o en las siguientes redes
-        sociales.
-      </p>
-    </section>
-
-    section id="contacto">
-      <h2>Contacto</h2>
-      <p>
-        Puedes contactarme a través de este formulario o en las siguientes redes
-        sociales.
-      </p>
-    </section>
-
-    section id="contacto">
-      <h2>Contacto</h2>
-      <p>
-        Puedes contactarme a través de este formulario o en las siguientes redes
-        sociales.
-      </p>
-    </section>
-
-    section id="contacto">
-      <h2>Contacto</h2>
-      <p>
-        Puedes contactarme a través de este formulario o en las siguientes redes
-        sociales.
-      </p>
-    </section>
-
-    <footer>
-      <p>&copy; 2024 Travo Rural. Todos los derechos reservados.</p>
-    </footer>
   </body>
 </html>
