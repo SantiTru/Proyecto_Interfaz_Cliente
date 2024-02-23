@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function () {
+  
 let currentIndex = 0;
 
     document.querySelector(".prev-button").addEventListener("click", () => {
@@ -39,3 +41,5 @@ let currentIndex = 0;
     document.querySelectorAll(".nav-button").forEach((button) => {
       button.addEventListener("click", stopAutoplay);
     });
+    
+  })

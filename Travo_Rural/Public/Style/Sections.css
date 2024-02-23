@@ -240,6 +240,7 @@ main {
   grid-template-columns: 2fr 1fr 2fr;  /* Esto crea dos columnas */
   width:100%; margin: 0;
   background-color: #eee;
+  column-gap: 20px;
 }
 
 .grid_item_img{display: flex;
@@ -284,6 +285,81 @@ border-radius: 20px;
 /****************************************/
 /* TESTIMONIALS SECTION*/
 /****************************************/
+
+
+blockquote {
+  margin: 0;
+  position: relative;
+}
+
+.feedback {
+  max-width: 900px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+}
+
+.feedback-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.feedback-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.feedback-item img {
+  width: 100%;
+  display: block;
+
+}
+
+/* Navegación de la galería */
+.feedback-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 40px);
+  margin: 0 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-button {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.nav-button > span {
+  font-size: 30px;
+}
+.nav-button:hover {
+  background-color: #005f5f;
+}
+.textoFeed {
+  text-align: center;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.813);  
+}
+
+.textoContainer {
+  position: absolute; 
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%; 
+  padding: 10px; 
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.245);
+  background-color: rgba(240, 248, 255, 0.556);
+}
 
 /****************************************/
 /* PRICING SECTION*/
