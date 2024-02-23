@@ -78,12 +78,13 @@
 
 .nav__link {
   color: var(--black-color);
-  font-weight: 600;
+  font-weight: 700;
   padding: 1.25rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   transition: background-color 0.3s;
+  font-size: 1.25rem;
 }
 
 .nav__link:hover {
@@ -329,7 +330,7 @@ main {
   line-height: 1.5;
   font-size: 20px;
   font-family: "Roboto Serif", serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .grid-left {
