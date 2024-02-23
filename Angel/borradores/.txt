@@ -1,7 +1,0 @@
-INDEX:
-
-- HEADER
-  - NAV
-    - DIV (NAV__DATA)
-      - A (NAV_LOGO)
-        I (RI-PLANET-LINE) Company
