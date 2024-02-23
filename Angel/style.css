@@ -3,25 +3,13 @@
 :root {
   --header-height: 3.5rem;
 
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation,ness)*/
+  /*========== Colores ==========*/
   --travo-color: #976c4e;
   --travo-color-claro: #b78867;
-  --white-color: #fff;
-  --body-color: hsl(220, 100%, 97%);
 
   /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Montserrat", sans-serif;
   --normal-font-size: 0.938rem;
-
-  /*========== Font weight ==========*/
-  --font-regular: 400;
-  --font-semi-bold: 600;
-
-  /*========== z index ==========*/
-  --z-tooltip: 10;
-  --z-fixed: 100;
 }
 
 @media screen and (min-width: 1024px) {
@@ -116,7 +104,6 @@ a {
   opacity: 0;
 }
 
-/* Navigation for mobile devices */
 @media screen and (max-width: 1118px) {
   .nav__menu {
     position: absolute;
@@ -140,7 +127,7 @@ a {
 
 .nav__link {
   color: var(--black-color);
-  font-weight: var(--font-semi-bold);
+  font-weight: 600;
   padding: 1.25rem 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -152,14 +139,12 @@ a {
   background-color: var(--travo-color-claro);
 }
 
-/* Show menu */
 .show-menu {
   opacity: 1;
   top: 3.5rem;
   pointer-events: initial;
 }
 
-/* Show icon */
 .show-icon .nav__burger {
   opacity: 0;
   transform: rotate(90deg);
@@ -169,7 +154,6 @@ a {
   transform: rotate(90deg);
 }
 
-/*=============== desplegable ===============*/
 .desplegable__item {
   cursor: pointer;
 }
@@ -187,7 +171,7 @@ a {
   display: flex;
   align-items: center;
   column-gap: 0.5rem;
-  font-weight: var(--font-semi-bold);
+  font-weight: 600;
   transition: background-color 0.3s;
 }
 
