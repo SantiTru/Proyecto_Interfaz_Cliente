@@ -37,7 +37,7 @@ let currentIndex = 0;
     // Iniciar autoplay con un intervalo de 2 segundos.
     startAutoplay(2000);
 
-    // Opcional: Detener autoplay cuando el usuario interactúa con los botones de navegación.
+    // Detener autoplay cuando el usuario interactúa con los botones de navegación.
     document.querySelectorAll(".nav-button").forEach((button) => {
       button.addEventListener("click", stopAutoplay);
     });
