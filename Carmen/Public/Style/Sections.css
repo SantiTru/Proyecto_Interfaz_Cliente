@@ -89,6 +89,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;  /* Esto crea dos columnas */
   width:100%; margin: 0 auto;
+  column-gap: 20px;
 }
 
 .grid_item_img{display: flex;
