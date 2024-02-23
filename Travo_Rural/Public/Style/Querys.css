@@ -32,12 +32,14 @@ con media queries, pues vamos a usar su homologo que es em*/
     opacity: 0;
     transition: top 0.4s, opacity 0.3s;
   }
+
   .nav__menu::-webkit-scrollbar {
     width: 0;
   }
   .nav__list {
     background-color: var(--travo-color);
     padding-top: 1rem;
+    z-index: 100;
   }
 }
 
@@ -106,4 +108,19 @@ con media queries, pues vamos a usar su homologo que es em*/
     pointer-events: initial;
     transition: top 0.3s;
   }
+}
+
+.show-menu {
+  opacity: 1;
+  top: 3.5rem;
+  pointer-events: initial;
+}
+
+.show-icon .nav__burger {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+.show-icon .nav__close {
+  opacity: 1;
+  transform: rotate(90deg);
 }
