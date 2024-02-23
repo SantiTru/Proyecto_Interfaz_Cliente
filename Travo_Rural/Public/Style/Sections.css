@@ -27,7 +27,7 @@
 }
 
 .nav {
-  height: 3.5rem;
+  height: 4rem;
 }
 
 .nav__logo,
@@ -88,21 +88,6 @@
 
 .nav__link:hover {
   background-color: var(--travo-color-claro);
-}
-
-.show-menu {
-  opacity: 1;
-  top: 3.5rem;
-  pointer-events: initial;
-}
-
-.show-icon .nav__burger {
-  opacity: 0;
-  transform: rotate(90deg);
-}
-.show-icon .nav__close {
-  opacity: 1;
-  transform: rotate(90deg);
 }
 
 .desplegable__item {
